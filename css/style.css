@@ -562,4 +562,6 @@ section {
     row-gap: 2rem;
     justify-items: start; }
   .blogs .box-container .box .key-highlights {
-    margin: 2rem; } }
+    margin: 2rem; }
+  .popup .popup__content .popup__left {
+    display: none; } }

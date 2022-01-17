@@ -831,4 +831,11 @@ section {
       }
     }
   }
+  .popup {
+    .popup__content {
+      .popup__left {
+        display: none;
+      }
+    }
+  }
 }
