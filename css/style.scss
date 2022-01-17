@@ -792,4 +792,43 @@ section {
   html {
     font-size: 50%;
   }
+  .about {
+    .row {
+      .info-container {
+        .box-container {
+          display: flex;
+          flex-direction: column;
+          .mob-box1 {
+            margin-bottom: -4rem;
+          }
+          .mob-box2 {
+            margin-bottom: -6rem;
+          }
+        }
+        .mob-btn {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+  .cert {
+    font-size: 5vw;
+    margin-bottom: 0;
+  }
+  .blogs {
+    .box-container {
+      .box {
+        .achiv-ul {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(100px, 1fr));
+          column-gap: 1.8rem;
+          row-gap: 2rem;
+          justify-items: start;
+        }
+        .key-highlights {
+          margin: 2rem;
+        }
+      }
+    }
+  }
 }
