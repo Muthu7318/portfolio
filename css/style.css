@@ -115,9 +115,9 @@ section {
     flex: 1 1 42rem;
     text-align: center; }
     .home .image img {
-      height: 50rem;
-      width: 50rem;
-      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+      height: 40rem;
+      width: 40rem;
+      border-radius: 50%; }
   .home .content {
     flex: 1 1 42rem; }
     .home .content h3 {
