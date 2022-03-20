@@ -44,14 +44,14 @@
           <div class="box-container">
             <div class="box mob-box1">
               <h3><span>name : </span>Nattar Muthukumaran M</h3>
-              <h3><span>age : </span> 23</h3>
-              <h3><span>email : </span> nattar4615@outlook.com</h3>
+              <h3 id="age"></h3>
+              <h3 style="text-transform: lowercase"><span>email : </span> nmuthukumaranm@gmail.com</h3>
               <h3><span>address : </span> Mogappair, Chennai - 600037</h3>
             </div>
 
             <div class="box mob-box2">
               <h3><span>skill : </span> full stack</h3>
-              <h3><span>experience : </span> 2.5 years</h3>
+              <h3 id="exp"></h3>
               <h3><span>language : </span> English, Tamil</h3>
             </div>
           </div>
@@ -141,6 +141,10 @@
           <img src="images/sql.png" />
           <h3>ms sql</h3>
         </div>
+        <div class="box">
+          <img src="images/Daco_4375878.png" />
+          <h3>aws</h3>
+        </div>
       </div>
     </section>
 
@@ -220,5 +224,20 @@
 
     <!-- education section ends -->
   </body>
- 
+ <script>
+   let experience = document.getElementById('exp');
+   var d1 = new Date("09/27/2019");  
+   var d2 = new Date();
+    
+   var diff = d2.getTime() - d1.getTime();   
+    
+   var daydiff = diff / (1000 * 60 * 60 * 24 * 30);  
+   experience.innerHTML = `<span>experience : </span>${Math.floor(Math.floor(daydiff)/12)}.${Math.floor(daydiff)%12} years`
+
+   let age = document.getElementById('age');
+      let agecalc = d2.getTime() - new Date('12/02/1997').getTime();
+      let agediff = agecalc / (1000 * 60 * 60 * 24 * 365);
+      age.innerHTML = `<span>age : </span> ${Math.floor(agediff)}`
+
+   </script>
 </html>
