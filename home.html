@@ -44,11 +44,7 @@
       <div class="content">
         <h3>hi, i am Muthu kumaran</h3>
         <span>full-stack developer</span>
-        <p>
-          B.E CSE, graduate with 2.5 years of experience as fullstack Developer
-          in Development, Testing & Implementation of both frontend and backend
-          Applications using Microsoft Technologies and mern stack technologies
-        </p>
+        <p id="exp-home"></p>
         <a href="contact.html" class="btn">
           Contact Me<i class="fas fa-user"></i>
         </a>
@@ -56,5 +52,19 @@
     </section>
 
     <!-- home section ends -->
+    <script>
+      let experience = document.getElementById("exp-home");
+      var d1 = new Date("09/27/2019");
+      var d2 = new Date();
+
+      var diff = d2.getTime() - d1.getTime();
+
+      var daydiff = diff / (1000 * 60 * 60 * 24 * 30);
+      experience.innerHTML = `${Math.floor(Math.floor(daydiff) / 12)}.${
+        Math.floor(daydiff) % 12
+      } years of experience as fullstack Developer
+          in Development, Testing & Implementation of both frontend and backend
+          Applications using Microsoft Technologies and mern stack technologies`;
+    </script>
   </body>
 </html>
