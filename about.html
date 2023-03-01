@@ -24,7 +24,9 @@
       <a href="portfolio.html">
         <i class="fas fa-briefcase"></i> <span>projects</span>
       </a>
-      <a href="blogs.html">  <i class="fas fa-trophy"></i> <span>Achievements</span> </a>
+      <a href="blogs.html">
+        <i class="fas fa-trophy"></i> <span>Achievements</span>
+      </a>
       <a href="contact.html">
         <i class="fas fa-address-book"></i> <span>contact</span>
       </a>
@@ -45,7 +47,9 @@
             <div class="box mob-box1">
               <h3><span>name : </span>Nattar Muthukumaran M</h3>
               <h3 id="age"></h3>
-              <h3 style="text-transform: lowercase"><span>email : </span> nmuthukumaranm@gmail.com</h3>
+              <h3 style="text-transform: lowercase">
+                <span>email : </span> nmuthukumaranm@gmail.com
+              </h3>
               <h3><span>address : </span> Mogappair, Chennai - 600037</h3>
             </div>
 
@@ -56,14 +60,18 @@
             </div>
           </div>
 
-          <a href="cv/Nattar Muthukumaran-resume.pdf" class="btn mob-btn" download>download CV
+          <a
+            href="cv/Nattar Muthukumaran Resume 2023.pdf.pdf"
+            class="btn mob-btn"
+            download
+            >download CV
             <i class="fas fa-download"></i>
           </a>
         </div>
 
         <div class="count-container">
           <div class="box">
-            <h3>2+</h3>
+            <h3 id="exp_year"></h3>
             <p>years of experience</p>
           </div>
 
@@ -114,24 +122,24 @@
           <h3>react</h3>
         </div>
         <div class="box">
-          <img src="images/angular-icon-logo.png" />
-          <h3>Angular</h3>
+          <img src="images/next-js.png" />
+          <h3>Next Js</h3>
         </div>
         <div class="box">
           <img src="images/redux-logo.png" />
           <h3>redux</h3>
         </div>
         <div class="box">
-          <img src="images/dotnet.png" />
-          <h3>.Net Framework</h3>
-        </div>
-        <div class="box">
-          <img src="images/csharp.png" />
-          <h3>c#</h3>
-        </div>
-        <div class="box">
           <img src="images/nodejs.png" />
           <h3>node js</h3>
+        </div>
+        <div class="box">
+          <img src="images/express.png" />
+          <h3>Express Js</h3>
+        </div>
+        <div class="box">
+          <img src="images/jest-js-icon.png" />
+          <h3>Jest</h3>
         </div>
         <div class="box">
           <img src="images/mongodb.png" />
@@ -144,6 +152,10 @@
         <div class="box">
           <img src="images/Daco_4375878.png" />
           <h3>aws</h3>
+        </div>
+        <div class="box">
+          <img src="images/git.png" />
+          <h3>Git</h3>
         </div>
       </div>
     </section>
@@ -161,7 +173,8 @@
           <span>2013 - 2015</span>
           <h3>Higher Secondary</h3>
           <p>
-            Graduated Higher Secondary education with computer science as major in velammal hr sec school with 94%
+            Graduated Higher Secondary education with computer science as major
+            in velammal hr sec school with 94%
           </p>
         </div>
 
@@ -170,74 +183,55 @@
           <span>2015 - 2019</span>
           <h3>College</h3>
           <p>
-            Graduated Bachelor of Engineering with computer science as major in rajalakshmi engineering college with 70 % 
+            Graduated Bachelor of Engineering with computer science as major in
+            rajalakshmi engineering college with 70 %
           </p>
         </div>
-      </section>
-      <section class="education">
-        <h1 class="heading"><span>my</span> career</h1>
-  
-        <div class="box-container">
+      </div>
+    </section>
+    <section class="education">
+      <h1 class="heading"><span>my</span> career</h1>
+
+      <div class="box-container">
         <div class="box">
           <i class="fas fa-briefcase"></i>
-          <span>2019 - current</span>
+          <span>Aug 2019 - May 2022</span>
           <h3>L&T Infotech</h3>
           <p>
             currently working as software engineer in claims - insurance domain
           </p>
         </div>
-
-        <!-- <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2018 - 2019</span>
-          <h3>front-end development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            explicabo magni est quo vitae quis veritatis fugiat optio placeat
-            enim!
-          </p>
-        </div>
-
         <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2019 - 2020</span>
-          <h3>front-end development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            explicabo magni est quo vitae quis veritatis fugiat optio placeat
-            enim!
-          </p>
+          <i class="fas fa-briefcase"></i>
+          <span>Jun 2022 - current</span>
+          <h3>Tata Consultuncy Services</h3>
+          <p>currently working as software engineer in E-Commerce Domain</p>
         </div>
-
-        <div class="box">
-          <i class="fas fa-graduation-cap"></i>
-          <span>2020 - 2021</span>
-          <h3>front-end development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            explicabo magni est quo vitae quis veritatis fugiat optio placeat
-            enim!
-          </p>
-        </div> -->
       </div>
     </section>
 
     <!-- education section ends -->
   </body>
- <script>
-   let experience = document.getElementById('exp');
-   var d1 = new Date("09/27/2019");  
-   var d2 = new Date();
-    
-   var diff = d2.getTime() - d1.getTime();   
-    
-   var daydiff = diff / (1000 * 60 * 60 * 24 * 30);  
-   experience.innerHTML = `<span>experience : </span>${Math.floor(Math.floor(daydiff)/12)}.${Math.floor(daydiff)%12} years`
+  <script>
+    let experience = document.getElementById("exp");
+    var d1 = new Date("09/27/2019");
+    var d2 = new Date();
 
-   let age = document.getElementById('age');
-      let agecalc = d2.getTime() - new Date('12/02/1997').getTime();
-      let agediff = agecalc / (1000 * 60 * 60 * 24 * 365);
-      age.innerHTML = `<span>age : </span> ${Math.floor(agediff)}`
+    var diff = d2.getTime() - d1.getTime();
 
-   </script>
+    var daydiff = diff / (1000 * 60 * 60 * 24 * 30);
+    experience.innerHTML = `<span>experience : </span>${Math.floor(
+      Math.floor(daydiff) / 12
+    )}.${Math.floor(daydiff) % 12} years`;
+
+    let yearExperience = document.getElementById("exp_year");
+    yearExperience.innerHTML = `${Math.floor(Math.floor(daydiff) / 12)}.${
+      Math.floor(daydiff) % 12
+    }`;
+
+    let age = document.getElementById("age");
+    let agecalc = d2.getTime() - new Date("12/02/1997").getTime();
+    let agediff = agecalc / (1000 * 60 * 60 * 24 * 365);
+    age.innerHTML = `<span>age : </span> ${Math.floor(agediff)}`;
+  </script>
 </html>
